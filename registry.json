@@ -3,5 +3,12 @@
     "name": "neofetch",
     "repo": "https://github.com/dylanaraps/neofetch",
     "install": { "cmd": "cp neofetch ~/.pengu/bin/ && chmod +x ~/.pengu/bin/neofetch" }
+  },
+  {
+    "name": "htop",
+    "repo": "https://github.com/htop-dev/htop.git",
+    "install": {
+      "cmd": "autoreconf -fi && ./configure --prefix=$PREFIX && make && make install"
+    }
   }
 ]
