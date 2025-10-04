@@ -2,6 +2,6 @@
   {
     "name": "neofetch",
     "repo": "https://github.com/dylanaraps/neofetch",
-    "install": { "cmd": "make install" }
+    "install": { "cmd": "cp neofetch ~/.pengu/bin/ && chmod +x ~/.pengu/bin/neofetch" }
   }
 ]
