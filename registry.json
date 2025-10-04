@@ -2,13 +2,101 @@
   {
     "name": "neofetch",
     "repo": "https://github.com/dylanaraps/neofetch",
-    "install": { "cmd": "cp neofetch ~/.pengu/bin/ && chmod +x ~/.pengu/bin/neofetch" }
+    "install": { "cmd": "cp neofetch $PREFIX/ && chmod +x $PREFIX/neofetch" }
   },
   {
     "name": "htop",
     "repo": "https://github.com/htop-dev/htop.git",
-    "install": {
-      "cmd": "autoreconf -fi && ./configure --prefix=$PREFIX && make && make install"
-    }
+    "install": { "cmd": "autoreconf -fi && ./configure --prefix=$PREFIX && make && make install" }
+  },
+  {
+    "name": "ncdu",
+    "repo": "https://dev.yorhel.nl/ncdu",
+    "install": { "cmd": "make && cp ncdu $PREFIX/ && chmod +x $PREFIX/ncdu" }
+  },
+  {
+    "name": "tree",
+    "repo": "https://github.com/ascii-trees/tree.git",
+    "install": { "cmd": "make && cp tree $PREFIX/ && chmod +x $PREFIX/tree" }
+  },
+  {
+    "name": "wget",
+    "repo": "https://github.com/mirror/wget.git",
+    "install": { "cmd": "./configure --prefix=$PREFIX && make && make install" }
+  },
+  {
+    "name": "curl",
+    "repo": "https://github.com/curl/curl.git",
+    "install": { "cmd": "./buildconf && ./configure --prefix=$PREFIX && make && make install" }
+  },
+  {
+    "name": "cowsay",
+    "repo": "https://github.com/tnalpgge/rank-amateur-cows.git",
+    "install": { "cmd": "cp cowsay $PREFIX/ && chmod +x $PREFIX/cowsay" }
+  },
+  {
+    "name": "figlet",
+    "repo": "https://github.com/cmatsuoka/figlet.git",
+    "install": { "cmd": "make && cp figlet $PREFIX/ && chmod +x $PREFIX/figlet" }
+  },
+  {
+    "name": "lolcat",
+    "repo": "https://github.com/busyloop/lolcat.git",
+    "install": { "cmd": "cp lolcat $PREFIX/ && chmod +x $PREFIX/lolcat" }
+  },
+  {
+    "name": "screenfetch",
+    "repo": "https://github.com/KittyKatt/screenFetch.git",
+    "install": { "cmd": "cp screenfetch-dev/screenfetch $PREFIX/ && chmod +x $PREFIX/screenfetch" }
+  },
+  {
+    "name": "micro",
+    "repo": "https://github.com/zyedidia/micro.git",
+    "install": { "cmd": "make build && cp micro $PREFIX/ && chmod +x $PREFIX/micro" }
+  },
+  {
+    "name": "ninvaders",
+    "repo": "https://github.com/hbokmann/ninvaders.git",
+    "install": { "cmd": "make && cp ninvaders $PREFIX/ && chmod +x $PREFIX/ninvaders" }
+  },
+  {
+    "name": "greed",
+    "repo": "https://github.com/xxxserxxx/greed.git",
+    "install": { "cmd": "make && cp greed $PREFIX/ && chmod +x $PREFIX/greed" }
+  },
+  {
+    "name": "broot",
+    "repo": "https://github.com/Canop/broot.git",
+    "install": { "cmd": "cargo build --release && cp target/release/broot $PREFIX/ && chmod +x $PREFIX/broot" }
+  },
+  {
+    "name": "fd",
+    "repo": "https://github.com/sharkdp/fd.git",
+    "install": { "cmd": "cargo build --release && cp target/release/fd $PREFIX/ && chmod +x $PREFIX/fd" }
+  },
+  {
+    "name": "ripgrep",
+    "repo": "https://github.com/BurntSushi/ripgrep.git",
+    "install": { "cmd": "cargo build --release && cp target/release/rg $PREFIX/ && chmod +x $PREFIX/rg" }
+  },
+  {
+    "name": "bat",
+    "repo": "https://github.com/sharkdp/bat.git",
+    "install": { "cmd": "cargo build --release && cp target/release/bat $PREFIX/ && chmod +x $PREFIX/bat" }
+  },
+  {
+    "name": "exa",
+    "repo": "https://github.com/ogham/exa.git",
+    "install": { "cmd": "cargo build --release && cp target/release/exa $PREFIX/ && chmod +x $PREFIX/exa" }
+  },
+  {
+    "name": "tldr",
+    "repo": "https://github.com/tldr-pages/tldr.git",
+    "install": { "cmd": "cp scripts/tldr $PREFIX/ && chmod +x $PREFIX/tldr" }
+  },
+  {
+    "name": "entr",
+    "repo": "https://github.com/eradman/entr.git",
+    "install": { "cmd": "make && cp entr $PREFIX/ && chmod +x $PREFIX/entr" }
   }
 ]
